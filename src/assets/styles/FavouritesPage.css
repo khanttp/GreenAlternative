@@ -1,0 +1,22 @@
+.favourites-container {
+  padding: 2rem;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+
+.favourites-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  color: #4e5a4c;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.favourites-empty {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  color: #6b7469;
+  text-align: center;
+  margin-top: 2rem;
+}
+
