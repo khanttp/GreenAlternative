@@ -44,7 +44,7 @@ function App() {
         <Navbar></Navbar>
         <div id="content">
         <Routes>
-          <Route path="/home" element={
+          <Route path="/GreenAlternative" element={
             <HomePage savedProducts={savedProducts} onSaveClicked={onSaveClicked} />
           } />
           <Route path="/FavouritesPage" element={<FavouritesPage savedProducts={savedProducts} onRemoveSavedClick={onRemoveSavedClick} />} />

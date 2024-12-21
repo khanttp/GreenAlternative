@@ -21,7 +21,7 @@ const drawerWidth = 240;
 const pages = [
   {
     label: "Home",
-    path: "/home",
+    path: "/GreenAlternative",
   },
   {
     label: "About",
