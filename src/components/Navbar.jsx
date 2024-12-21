@@ -21,7 +21,7 @@ const drawerWidth = 240;
 const pages = [
   {
     label: "Home",
-    path: "/",
+    path: "/home",
   },
   {
     label: "About",
@@ -46,7 +46,7 @@ export default function Navbar(props) {
       onClick={handleDrawerToggle}
       sx={{
         textAlign: "center",
-        backgroundColor: "#f9f9f9", 
+        backgroundColor: "#f9f9f9",
         height: "100%",
       }}
     >
