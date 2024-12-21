@@ -1,7 +1,7 @@
 
 export async function makeApiRequest(searchQuery) {
   try {
-    const response = await fetch('http://localhost:3003/search', {
+    const response = await fetch('https://green-alternative-server-26a7dd482e32.herokuapp.com/search', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
