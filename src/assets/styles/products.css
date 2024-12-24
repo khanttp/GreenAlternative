@@ -5,8 +5,9 @@
   width: 78%;
   max-width: 85%;
   gap: 2rem;
-  transition: transform 0.3s ease-in-out;
   padding: 1rem;
+  margin: 0 auto; /* Ensure the product list is centered */
+  transition: transform 0.3s ease-in-out;
 }
 
 .product-item {
@@ -92,6 +93,9 @@
   .product-list {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
+    width: 95%; /* Adjust width for smaller screens */
+    max-width: none; /* Remove max-width to let it be flexible */
+    margin: 0 auto; /* Ensure centering on smaller screens */
   }
 
   .product-item {
