@@ -1,8 +1,12 @@
 #homeContent {
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
   min-height: 100vh;
   box-sizing: border-box;
   transition: margin-top 0.3s ease;
+  border: 1px solid blue;
 }
 
 #searchForHeader {
