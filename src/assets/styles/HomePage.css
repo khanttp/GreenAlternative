@@ -5,6 +5,7 @@
   justify-content: center;
   min-height: 100vh;
   box-sizing: border-box;
+  justify-content: flex-start;
   transition: margin-top 0.3s ease;
 }
 
