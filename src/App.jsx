@@ -1,9 +1,6 @@
 import './assets/styles/App.css'
-
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { useState } from 'react';
-import { useEffect } from 'react';
-
+import { useState, useEffect } from 'react';
 import FavouritesPage from "./components/FavouritesPage"
 import HomePage from "./components/HomePage"
 import AboutPage from "./components/AboutPage"
@@ -12,13 +9,13 @@ import Footer from './components/Footer';
 
 function App() {
   const [savedProducts, setSavedProducts] = useState(() => {
-    const localdata = localStorage.getItem("savedProducts");
-    if (localdata == null) return [];
-    return JSON.parse(localdata);
+    const sessionData = sessionStorage.getItem("savedProducts");
+    if (sessionData == null) return [];
+    return JSON.parse(sessionData);
   });
 
   useEffect(() => {
-    localStorage.setItem("savedProducts", JSON.stringify(savedProducts))
+    sessionStorage.setItem("savedProducts", JSON.stringify(savedProducts))
   }, [savedProducts])
 
   function onSaveClicked(product) {
@@ -41,17 +38,19 @@ function App() {
   return (
     <>
       <Router>
-        <Navbar></Navbar>
-        <div id="content">
-        <Routes>
-          <Route path="/GreenAlternative" element={
-            <HomePage savedProducts={savedProducts} onSaveClicked={onSaveClicked} />
-          } />
-          <Route path="/FavouritesPage" element={<FavouritesPage savedProducts={savedProducts} onRemoveSavedClick={onRemoveSavedClick} />} />
-          <Route path="/AboutPage" element={<AboutPage />} />
-        </Routes>
+        <div className='app-container'>
+          <Navbar></Navbar>
+          <Routes>
+            <Route path="/GreenAlternative" element={
+              <HomePage savedProducts={savedProducts} onSaveClicked={onSaveClicked} />
+            } />
+            <Route path="/FavouritesPage" element={
+              <FavouritesPage savedProducts={savedProducts} onRemoveSavedClick={onRemoveSavedClick} />
+            } />
+            <Route path="/AboutPage" element={<AboutPage />} />
+          </Routes>
+          <Footer></Footer>
         </div>
-        <Footer></Footer>
       </Router>
     </>
   )

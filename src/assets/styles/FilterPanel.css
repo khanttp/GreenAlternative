@@ -35,14 +35,7 @@
   width: 100%;
 }
 
-.icon-button {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 1001;
-}
-
 .icon-button .MuiSvgIcon-root {
-  color: white; 
+  color: rgba(255, 255, 255, 1);
+
 }
