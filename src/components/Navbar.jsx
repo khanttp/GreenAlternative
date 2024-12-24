@@ -102,6 +102,7 @@ export default function Navbar(props) {
           >
             <MenuIcon />
           </IconButton>
+          <Link to= "/GreenAlternative">
           <Typography
             variant="h4"
             component="div"
@@ -109,9 +110,11 @@ export default function Navbar(props) {
               flexGrow: 1,
               display: { xs: "none", sm: "block" },
               fontFamily: "'Poppins', sans-serif",
+              color:"white",
             }}>
             EcoChoice
           </Typography>
+          </Link>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
 
             {pages.map((item) => (
