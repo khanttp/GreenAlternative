@@ -1,8 +1,27 @@
-# React + Vite
+# 🌿 Green Alternatives Finder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Green Alternatives Finder** is a web application designed to help users search for eco-friendly and sustainable alternatives to their everyday products. Built with modern web technologies, the platform offers a seamless experience to promote sustainability and make environmentally conscious choices.
 
-Currently, two official plugins are available:
+## 📖 How It Works
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. **Search for a Product**:
+   - Type a product name (e.g., "shampoo") in the search bar.
+   - Click the search icon or press `Enter`.
+
+2. **View Results**:
+   - The page scrolls to the results section, displaying a list of green alternatives.
+   - Save your favorite products for future reference.
+
+---
+
+## 📌 Future Enhancements
+
+- **Different API Integration**
+- **User Profiles**
+- **Advanced Filtering**
+
+---
+
+## 📝 License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+---
